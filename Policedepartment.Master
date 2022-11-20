@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Policedepartment.master.cs" Inherits="AspDotNet2_l5.Policedepartment" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html mlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style4 {
+            width: 91px;
+        }
+
+        .auto-style8 {
+            width: 1300px;
+        }
+
+        .auto-style9 {
+            width: 193px;
+        }
+        .auto-style10 {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <td class="auto-style4" bgcolor="#8AB9FF">
+                        <asp:Image ID="Image1" runat="server" Height="144px" ImageUrl="~/resources/usd.png" Width="144px" />
+                    </td>
+                    <td align="center" bgcolor="#8AB9FF">
+                        <h1>POLICE DEPARTMENT</h1>
+                    </td>
+            </table>
+        </div>
+
+        <table style="width: 100%;">
+            <tr>
+                <td valign="top" class="auto-style8">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td bgcolor="#C3DBFF" valign="top">
+                    <table>
+                        <tr>
+                            <td align="center" class="auto-style9">
+                                <asp:Label ID="Label2" runat="server" Text="Menu"
+                                    Font-Size="16pt" ForeColor="#012F74">
+                                </asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Menu ID="Menu1" runat="server"
+                                    Font-Size="13pt" ForeColor="#012F74">
+                                    <Items>
+                                        <asp:MenuItem Text="Policemen" Value="Policemen" navigateurl ="~/Default.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Intruders" Value="Intruders" NavigateUrl="~/OnliIntrudeerList.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Departments" Value="Departmens" NavigateUrl="~/DepartmentForm.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%;">
+            <tr>
+                <td class="auto-style10">
+                    <hr style="color: #012F74" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <asp:Label ID="Label3" runat="server" Text="Sezonchyk S.S. PI-191 (c)"
+                        ForeColor="#012F74"></asp:Label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
